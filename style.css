@@ -1,0 +1,254 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background:#37474f;
+    background-image: url("paper.gif");
+}
+
+header{
+ display: flex;
+ justify-content: space-around;
+}
+
+.navbar{
+    position: relative;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    top:30px;
+}
+
+
+
+.container{
+    overflow:auto;
+    position: relative;
+    padding:20px;
+    background:#26a69a;
+    border-radius:5%;
+    text-align: center;
+    font-size: 20px;
+    left:40%;
+    width: 400px;
+    height: 700px;
+    -webkit-border-radius:5%;
+    -moz-border-radius:5%;
+    -ms-border-radius:5%;
+    -o-border-radius:5%;
+}
+
+
+@media (max-width: 50em) {
+    .container {
+                  left:0;
+                  width: 320px;
+                  height:600px;
+              }
+  }
+
+
+
+
+
+#place{
+    outline: none;
+    background-color: transparent;
+    border:none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+#bTn{
+
+    cursor: pointer;
+    border:none;
+    background-color:#8a2b4b;
+    color:white;
+}
+
+
+
+ .radio{
+     position: relative;
+     top:15px;;;
+ }
+
+ ::placeholder { 
+    color: white;
+    font-size: 15px;
+
+}
+
+
+#temp{
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    font-size: 5em;
+    padding:0;
+    top:15%;
+    left:5%;
+}
+
+#desc{
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    font-size: 2em;
+    padding:0;
+    top:40%;
+    left:5%;
+}
+#humidity{
+    position: absolute;
+    font-size: 1em;
+    padding:0;
+    top:52%;
+    left:6%;
+}
+
+#windSpeed{
+    position: absolute;
+    font-size: 1em;
+    padding:0;
+    top:57%;
+    left:6%;  
+}
+
+#city{
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    font-size: 3em;
+    padding:0;
+    top:70%;
+    right:5%;
+}
+
+#country{
+    position: absolute;
+    font-size: 2em;
+    padding:0;
+    top:70%;
+    right:5%;
+}
+
+#add{
+    position: absolute;
+    font-size: 2em;
+    padding:0;
+    top:80%;
+    left:10%;
+    z-index: 1000;
+} 
+
+#favorite{
+    position: absolute;
+    font-size: 2em;
+    padding:0;
+    top:80%;
+    left:29%;
+} 
+
+#icon{
+    position: absolute;
+    width: 80px;
+    right:10%;
+    top:25%
+}
+
+#iconError{
+    position: absolute;
+    width: 80px;
+    right:40%;
+    top:25%
+}
+
+.fa-sun{
+    position: absolute;
+    font-size: 1em;
+    padding:0;
+    top:40%;
+    right:10%;    
+}
+
+#sunrise {
+    position: absolute;
+    font-size: 1em;
+    padding:0;
+    top:44%;
+    right:5%;
+}
+
+#sunR{
+    position: absolute;
+    font-size: 1em;
+    padding:0;
+    top:52%;
+    right:10%;    
+}
+
+#sunset{
+    position: absolute;
+    font-size: 1em;
+    padding:0;
+    top:55%;
+    right:5%;
+}
+
+.history{
+    overflow: hidden;
+    position: relative;
+    top:10%;
+    border: 1px solid whitesmoke;
+
+}
+
+ .history>div{
+    display: flex;
+    justify-content: space-around;
+} 
+
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: white;
+     height: 15px;
+     width: 15px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 5px;
+     top: 1px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #8a2b4b;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: #666;
+     cursor: pointer;
+} 
